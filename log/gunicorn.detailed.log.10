@@ -1,0 +1,52 @@
+[2025-04-13 14:24:28,919] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:24:28] "[33mGET /doctors HTTP/1.1[0m" 404 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:24:29,764] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:24:29] "[33mGET /events HTTP/1.1[0m" 404 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:24:30,785] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:24:30] "[33mGET /doctors HTTP/1.1[0m" 404 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:24:44,206] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:24:44] "[33mPOST /doctor HTTP/1.1[0m" 404 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:24:48,582] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:24:48] "[33mOPTIONS /doctor?name=abc HTTP/1.1[0m" 404 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:25:10,257] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:25:10] "[33mOPTIONS /produto?nome=Presunto HTTP/1.1[0m" 404 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:36:36,356] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:36:36] "GET /turma HTTP/1.1" 200 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:36:36,357] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:36:36] "GET /aluno HTTP/1.1" 200 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:37:49,374] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:37:49] "GET /aluno HTTP/1.1" 200 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:37:49,376] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:37:49] "GET /turma HTTP/1.1" 200 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:38:52,343] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:38:52] "GET /aluno HTTP/1.1" 200 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:38:52,367] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:38:52] "GET /turma HTTP/1.1" 200 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:42:31,941] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:42:31] "GET /turma HTTP/1.1" 200 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:42:31,942] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:42:31] "GET /aluno HTTP/1.1" 200 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:43:28,894] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:43:28] "GET /aluno HTTP/1.1" 200 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:43:28,895] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:43:28] "GET /turma HTTP/1.1" 200 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:46:18,478] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:46:18] "GET /aluno HTTP/1.1" 200 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:46:18,481] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:46:18] "GET /turma HTTP/1.1" 200 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:46:21,692] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:46:21] "OPTIONS /aluno/1 HTTP/1.1" 200 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:46:21,702] ERROR log_exception() L875  Exception on /aluno/1 [DELETE] - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\flask\app.py L875 
+Traceback (most recent call last):
+  File "C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+TypeError: del_aluno() missing 1 required positional argument: 'id'
+[2025-04-13 14:46:21,734] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:46:21] "[35m[1mDELETE /aluno/1 HTTP/1.1[0m" 500 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:51:04,031] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:51:04] "GET /aluno HTTP/1.1" 200 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:51:04,032] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:51:04] "GET /turma HTTP/1.1" 200 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:51:10,515] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:51:10] "OPTIONS /aluno HTTP/1.1" 200 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:51:17,516] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:51:17] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:51:17,698] WARNING add_aluno() L73   Erro ao adicionar aluno 'Rafael Fonte': Aluno de mesmo nome já salvo na base :/ - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\app.py L73  
+[2025-04-13 14:51:17,699] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:51:17] "[31m[1mPOST /aluno HTTP/1.1[0m" 409 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:51:17,834] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:51:17] "[36mGET /openapi/swagger/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:51:17,854] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:51:17] "[36mGET /openapi/swagger/css/swagger-ui.css HTTP/1.1[0m" 304 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:51:17,865] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:51:17] "[36mGET /openapi/swagger/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:51:18,092] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:51:18] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:51:18,094] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:51:18] "[36mGET /openapi/swagger/images/swagger.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:51:27,839] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:51:27] "GET /aluno HTTP/1.1" 200 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:51:33,524] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:51:33] "[33mDELETE /aluno/{id} HTTP/1.1[0m" 404 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:51:34,431] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:51:34] "[33mDELETE /aluno/{id} HTTP/1.1[0m" 404 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 14:51:40,822] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 14:51:40] "GET /aluno HTTP/1.1" 200 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  

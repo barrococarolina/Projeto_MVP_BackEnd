@@ -1,0 +1,93 @@
+[2025-04-13 15:13:50,070] ERROR log_exception() L875  Exception on /aluno [GET] - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\flask\app.py L875 
+Traceback (most recent call last):
+  File "C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+  File "C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\app.py", line 92, in get_aluno
+    aluno = session.query(Aluno).all()
+  File "C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2704, in all
+    return self._iter().all()  # type: ignore
+           ~~~~~~~~~~^^
+  File "C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\sqlalchemy\orm\query.py", line 2858, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+        params,
+        ^^^^^^^
+        execution_options={"_sa_orm_load_options": self.load_options},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2241, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2110, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in _connection_for_bind
+  File "C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1189, in _connection_for_bind
+    conn = bind.connect()
+  File "C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3274, in connect
+    return self._connection_cls(self)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3298, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1264, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 713, in checkout
+    rec = pool._do_get()
+  File "C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+    ...<4 lines>...
+    )
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+[2025-04-13 15:13:50,082] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 15:13:50] "[35m[1mGET /aluno HTTP/1.1[0m" 500 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 15:13:59,638] INFO _log() L97   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000 - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 15:13:59,639] INFO _log() L97   [33mPress CTRL+C to quit[0m - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 15:14:03,314] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 15:14:03] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 15:14:03,515] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 15:14:03] "[36mGET /openapi/swagger/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 15:14:03,523] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 15:14:03] "[36mGET /openapi/swagger/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 15:14:03,531] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 15:14:03] "[36mGET /openapi/swagger/css/swagger-ui.css HTTP/1.1[0m" 304 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 15:14:03,610] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 15:14:03] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 15:14:03,613] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 15:14:03] "[36mGET /openapi/swagger/images/swagger.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 15:14:09,045] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 15:14:09] "GET /aluno HTTP/1.1" 200 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 15:14:17,731] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 15:14:17] "DELETE /aluno?id=1 HTTP/1.1" 200 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 15:14:23,104] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 15:14:23] "GET /aluno HTTP/1.1" 200 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 15:14:31,245] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 15:14:31] "GET /turma HTTP/1.1" 200 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 15:14:36,872] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 15:14:36] "DELETE /turma?id=1 HTTP/1.1" 200 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 15:14:40,403] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 15:14:40] "GET /aluno HTTP/1.1" 200 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 15:14:40,406] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 15:14:40] "GET /turma HTTP/1.1" 200 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 15:14:43,785] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 15:14:43] "OPTIONS /turma HTTP/1.1" 200 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 15:14:43,800] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 15:14:43] "POST /turma HTTP/1.1" 200 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
+[2025-04-13 15:14:45,139] INFO _log() L97   127.0.0.1 - - [13/Apr/2025 15:14:45] "GET /turma HTTP/1.1" 200 - - call_trace=C:\Users\Carolina Barroco\Desktop\projeto_MVP_backend\venv\Lib\site-packages\werkzeug\_internal.py L97  
