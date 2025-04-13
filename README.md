@@ -1,7 +1,7 @@
 # MVP Full Stack - Back-End (API)
 ## 1. Introdução
 
-Este projeto é parte do MVP - _Minimum Viable Product_ - da _Sprint_ **Desenvolvimento _Full Stack_ Básico** do Curso de Engenharia de Software da PUC-Rio. O MVP é composto de um Back-End, com banco de dados, e de um Front-End. Neste repositório encontra-se a parte do Back-end da aplicação. A parte do front-end pode ser acessada em [MVP_FullStack_Front-End](https://github.com/barrococarolina/MVP_FullStack_FrontEnd).
+Este projeto é parte do MVP - _Minimum Viable Product_ - da _Sprint_ **Desenvolvimento _Full Stack_ Básico** do Curso de Engenharia de Software da PUC-Rio. O MVP é composto de um Back-End, com banco de dados, e de um Front-End. Neste repositório encontra-se a parte do Back-end da aplicação. A parte do front-end pode ser acessada em [Projeto_MVP_FrontEnd](https://github.com/barrococarolina/Projeto_MVP_FrontEnd).
 
 >O projeto desenvolvido objetiva o *Gerenciamento de uma Escola*.
 
